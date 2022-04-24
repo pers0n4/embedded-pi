@@ -10,7 +10,7 @@ while True:
     try:
         temperature = device.temperature
         humidity = device.humidity
-        print(f"Temp: {temperature:.1f}°C, Humidity: {humidity}% ")
+        print(f"Temp: {temperature:.1f}°C, Humidity: {humidity}%")
 
     except RuntimeError as error:
         # Errors happen fairly often, DHT's are hard to read, just keep going
