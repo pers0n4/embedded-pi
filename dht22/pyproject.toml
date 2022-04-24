@@ -5,7 +5,7 @@ description = ""
 authors = ["Dong-Young Kim <31337.persona@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.11"
 adafruit-circuitpython-dht = "^3.7.2"
 fastapi = "^0.75.2"
 uvicorn = { extras = ["standard"], version = "^0.17.6" }
@@ -13,6 +13,7 @@ pydantic = "^1.9.0"
 sqlmodel = "^0.0.6"
 Jinja2 = "^3.1.1"
 APScheduler = "^3.9.1"
+PySide2 = "^5.15.2"
 
 [tool.poetry.dev-dependencies]
 
