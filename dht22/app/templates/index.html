@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block body %}
+<main class="container">
+  <h1>DHT22</h1>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Humidity</th>
+        <th scope="col">Temperature</th>
+        <th scope="col">Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for record in records %}
+      <tr>
+        <th scope="row">{{ record.id }}</th>
+        <td>{{ record.humidity }}</td>
+        <td>{{ record.temperature }}</td>
+        <td>{{ record.timestamp }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</main>
+{% endblock %}
