@@ -23,7 +23,6 @@ class Window(QWidget):
         self.setLayout(layout)
         self.resize(QApplication.primaryScreen().availableSize() / 5)
 
-
     def get_label(self):
         temperature = device.temperature
         humidity = device.humidity
