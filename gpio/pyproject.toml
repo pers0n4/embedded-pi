@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gpio"
+version = "0.1.0"
+description = ""
+authors = ["Dong-Young Kim <31337.persona@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+"RPi.GPIO" = "^0.7.1"
+Flask = "^2.1.1"
+pyserial = "^3.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
